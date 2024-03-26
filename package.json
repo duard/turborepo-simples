@@ -13,7 +13,7 @@
   "devDependencies": {
     "@projectx/eslint-config": "workspace:*",
     "@projectx/tsconfig": "workspace:*",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.9.0",
