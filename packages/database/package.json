@@ -1,0 +1,31 @@
+{
+  "name": "@repo/database",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "db:check": "drizzle-kit check:pg",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "ts-node ./migrate.ts"
+  },
+  "devDependencies": {
+    "@projectx/eslint-config": "workspace:^",
+    "@projectx/prettier-config": "workspace:^",
+    "@projectx/tailwind-config": "workspace:^",
+    "@projectx/tsconfig": "workspace:^",
+    "drizzle-kit": "^0.20.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@auth/core": "^0.22.0",
+    "@auth/drizzle-adapter": "^0.3.17",
+    "@planetscale/database": "^1.14.0",
+    "dotenv": "^16.4.1",
+    "drizzle-orm": "^0.29.3",
+    "mysql2": "^3.9.1",
+    "undici": "^6.5.0"
+  }
+}
